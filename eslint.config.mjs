@@ -1,18 +1,20 @@
-import { defineConfig, globalIgnores } from "eslint/config";
-import nextVitals from "eslint-config-next/core-web-vitals";
-import nextTs from "eslint-config-next/typescript";
+import { defineConfig, globalIgnores } from 'eslint/config';
+import nextVitals from 'eslint-config-next/core-web-vitals';
+import nextTs from 'eslint-config-next/typescript';
+import prettier from 'eslint-config-prettier/flat'; // ✅ Prettier flat config
+import storybook from 'eslint-plugin-storybook';
 
-const eslintConfig = defineConfig([
+export default defineConfig([
   ...nextVitals,
   ...nextTs,
-  // Override default ignores of eslint-config-next.
-  globalIgnores([
-    // Default ignores of eslint-config-next:
-    ".next/**",
-    "out/**",
-    "build/**",
-    "next-env.d.ts",
-  ]),
+  {
+    files: ['**/*.stories.@(ts|tsx|js|jsx)'], // optional: Storybook files
+    plugins: { storybook },
+    rules: {
+      'storybook/hierarchy-separator': 'error',
+      'storybook/default-exports': 'warn',
+    },
+  },
+  prettier, // ✅ must be last to override formatting rules
+  globalIgnores(['.next/**', 'out/**', 'build/**', 'next-env.d.ts']),
 ]);
-
-export default eslintConfig;

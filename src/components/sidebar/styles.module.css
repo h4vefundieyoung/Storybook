@@ -1,0 +1,17 @@
+.sidebar {
+  height: -webkit-fill-available;
+  height: -moz-available;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #f0f8ff;
+  transition: transform 0.5s ease-in-out;
+}
+
+.sidebar-hidden {
+  transform: translateX(100%);
+}

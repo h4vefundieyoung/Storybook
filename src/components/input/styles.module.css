@@ -1,0 +1,67 @@
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  font-size: 12px;
+}
+
+.input-container {
+  display: flex;
+  position: relative;
+}
+
+.input-container:hover .input:not(:focus-visible) {
+  background-color: #97f2bb28;
+}
+
+.input {
+  position: relative;
+  width: 100%;
+  padding: 12px 16px;
+  background-color: #fff;
+  border: solid 1px #05401c;
+  border-radius: 8px;
+  transition:
+    background-color 0.2s ease-in-out,
+    outline 0.1s ease;
+}
+
+.input:focus-visible {
+  outline: 1.5px solid #05451e9e;
+  outline-offset: 2px;
+  background-color: initial;
+}
+
+.icon-spacing {
+  padding-right: 30px;
+}
+
+.icon-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 4px;
+}
+
+.icon-container:hover {
+  opacity: 0.8;
+}
+
+.clear-button {
+  position: absolute;
+  right: 0;
+  top: -20px;
+  background-color: transparent;
+  border: none;
+}
+
+.clear-button:hover {
+  color: #aaa;
+}
+
+.icon-container,
+.clear-button {
+  cursor: pointer;
+}

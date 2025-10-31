@@ -1,0 +1,41 @@
+.accordion {
+  padding: 0;
+}
+
+.accordion.accordion {
+  transform: scale(0.8);
+  padding-left: 20px;
+  list-style: none;
+}
+
+.accordion-heading {
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.accordion-heading:hover {
+  color: #bfbfbf;
+}
+
+.accordion-content {
+  max-height: 0;
+  transition: max-height 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+.content-status {
+  visibility: hidden;
+  position: absolute;
+}
+
+.content-status:checked + .accordion-content {
+  max-height: 200px;
+}
+
+.accordion-heading,
+.accordion-content {
+  width: 100%;
+}

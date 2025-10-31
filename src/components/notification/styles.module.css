@@ -1,0 +1,58 @@
+.notification-stack {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+.notification-card {
+  display: flex;
+  padding: 10px 20px;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  min-height: 30px;
+  min-width: 200px;
+  transition: opacity 1s ease-in;
+  animation: appearing 0.5s ease-in;
+  border-radius: 8px;
+}
+
+.notification-success {
+  background-color: #268550;
+}
+
+.notification-error {
+  background-color: #d93b53;
+}
+
+.close-button {
+  cursor: pointer;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+
+.fade {
+  opacity: 0;
+}
+
+.card-message-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 8px;
+  color: #fff;
+}
+
+@keyframes appearing {
+  0% {
+    transform: translateY(-100vw);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
