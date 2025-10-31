@@ -54,8 +54,8 @@ A versatile input component with support for:
   onClear={() => console.log('cleared')}
 />
 ```
-![Input Component](https://ibb.co/gLNprHbB)
-![Input Component](https://ibb.co/dw4C6L1S)
+![Input Component](https://i.ibb.co/bMTZ6qj8/Screenshot-2025-10-31-at-02-48-04.png)
+![Input Component](https://i.ibb.co/ycFv5YGD/Screenshot-2025-10-31-at-02-48-35.png)
 ---
 
 ### 2. Notifications
@@ -105,8 +105,8 @@ addNotification({
 | `isClosable` | `boolean`                    | Show close button |
 | `onClose`    | `() => void`                 | Callback when closed |
 
-![Notification Component](https://ibb.co/qY4hQx0P)
-![Notification Component](https://ibb.co/TDyNvTgn)
+![Notification Component](https://i.ibb.co/QvqhwX81/Screenshot-2025-10-31-at-02-49-03.png)
+![Notification Component](https://i.ibb.co/qL62ynr4/Screenshot-2025-10-31-at-02-49-14.png)
 ---
 
 ### 3. Sidebar
@@ -135,10 +135,10 @@ A collapsible sidebar component with nested accordion menus.
   ]}
 />
 ```
-![Sidebar Component](https://ibb.co/TBF2WVyc)
-![Sidebar Component](https://ibb.co/fdkp8GPT)
+![Sidebar Component](https://i.ibb.co/7J6Ckwhv/Screenshot-2025-10-31-at-02-49-32.png)
+![Sidebar Component](https://i.ibb.co/zVXR8H0t/Screenshot-2025-10-31-at-02-49-43.png)
 ---
-![Storybook](https://ibb.co/7J21MN5d)
+![Storybook](https://i.ibb.co/fY4x6G5z/Screenshot-2025-10-31-at-02-50-17.png)
 ---
 
 ## Features
